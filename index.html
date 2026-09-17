@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stimmbildung & Alexander-Technik in Berlin | Vokalwerkstatt Beate v. Hahn</title>
+<meta name="description" content="Stimmbildung und Alexander-Technik in Berlin bei Beate v. Hahn, Dipl. Opern- und Konzertsängerin und zertifizierte Lehrerin der Alexander-Technik. Für Sänger:innen, Sprecher:innen, Coaches und Therapeut:innen.">
+<link rel="canonical" href="https://vokalwerkstatt.de/">
+<meta property="og:title" content="Vokalwerkstatt: Stimmbildung & Alexander-Technik in Berlin">
+<meta property="og:description" content="Stimmbildung und Alexander-Technik in Berlin bei Beate v. Hahn.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vokalwerkstatt.de/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Vokalwerkstatt, Beate v. Hahn",
+  "description": "Stimmbildung und Alexander-Technik in Berlin",
+  "url": "https://vokalwerkstatt.de/",
+  "telephone": "+49-178-2838224",
+  "email": "info@vokalwerkstatt.de",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Arndtstraße 21",
+    "postalCode": "10965",
+    "addressLocality": "Berlin",
+    "addressCountry": "DE"
+  },
+  "founder": { "@type": "Person", "name": "Beate v. Hahn" }
+}
+</script>
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --bg-alt: #F8F2E7;
+    --ink: #2A2622;
+    --ink-soft: #6B6358;
+    --wine: #7A3B32;
+    --wine-deep: #5E2C25;
+    --line: #DED4C1;
+    --white: #FFFFFF;
+    --gold: #C99A3D;
+    --gold-pale: #DDBB78;
+    --logo: "Archivo Black", "Montserrat", sans-serif;
+    --display: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --sans: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --max: 1080px;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 32px; }
+  .wrap-narrow { max-width: 720px; margin: 0 auto; padding: 0 32px; }
+
+  .skip-link {
+    position: absolute; left: -999px; top: 0;
+    background: var(--ink); color: var(--white);
+    padding: 12px 20px; z-index: 200;
+  }
+  .skip-link:focus { left: 12px; top: 12px; }
+
+  a:focus-visible, button:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--wine);
+    outline-offset: 3px;
+  }
+
+  /* ---------- Header ---------- */
+
+  header.site-header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 1px 0 var(--line);
+  }
+  .header-inner {
+    display: flex; flex-direction: column; align-items: center; gap: 14px;
+    padding: 22px 32px 16px; max-width: var(--max); margin: 0 auto;
+  }
+  .wordmark { text-decoration: none; display: flex; align-items: center; }
+  .wordmark .brand-block { text-align: center; }
+  .wordmark .brand {
+    font-family: var(--logo); font-weight: 400; font-size: 1.6rem;
+    letter-spacing: 0.01em; text-transform: uppercase;
+    color: var(--ink); display: block;
+  }
+  .wordmark .sub {
+    display: block; font-family: var(--sans); font-size: 0.72rem;
+    font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft);
+    margin-top: 3px;
+  }
+
+  nav.main-nav ul {
+    list-style: none; display: flex; flex-wrap: wrap; justify-content: center;
+    gap: 8px 26px; margin: 0; padding: 0;
+  }
+  nav.main-nav a {
+    text-decoration: none; font-size: 0.76rem; color: var(--ink);
+    font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;
+    white-space: nowrap; position: relative; padding-bottom: 3px;
+  }
+  nav.main-nav a::after {
+    content: ""; position: absolute; left: 0; bottom: -2px;
+    width: 0; height: 7px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='7'%3E%3Cpath d='M0 3.5 Q4 0 8 3.5 T16 3.5' stroke='%237A3B32' stroke-width='1.4' fill='none'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    overflow: hidden;
+    transition: width 0.2s ease;
+  }
+  nav.main-nav a:hover::after, nav.main-nav a:focus-visible::after { width: 100%; }
+
+  .nav-toggle {
+    display: none; background: none; border: 1.5px solid var(--ink);
+    border-radius: 7px; padding: 8px 11px; cursor: pointer;
+    position: absolute; right: 20px; top: 18px;
+  }
+  .nav-toggle span { display: block; width: 20px; height: 2px; background: var(--ink); margin: 4px 0; }
+
+  /* ---------- Links / CTA ---------- */
+
+  .link-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    text-decoration: none;
+    font-family: var(--sans); font-weight: 700; font-size: 0.98rem;
+    color: var(--wine-deep);
+    padding: 0 0 7px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='7'%3E%3Cpath d='M0 3.5 Q4 0 8 3.5 T16 3.5' stroke='%235E2C25' stroke-width='1.4' fill='none'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    background-size: 16px 7px;
+    transition: gap 0.15s ease;
+  }
+  .link-cta:hover { gap: 13px; }
+  .link-cta::after { content: "\2192"; }
+
+  /* ---------- Hero ---------- */
+
+  .hero {
+    background: radial-gradient(ellipse 90% 70% at 15% 0%, #FBF3E4 0%, rgba(251,243,228,0) 60%),
+                radial-gradient(ellipse 80% 60% at 100% 30%, #FDF0E9 0%, rgba(253,240,233,0) 55%);
+  }
+  .hero-grid {
+    display: grid; grid-template-columns: minmax(320px, 500px) 1fr;
+    align-items: stretch; min-height: 640px;
+  }
+  .hero-copy {
+    text-align: left; align-self: center;
+    padding: 64px clamp(24px, 5vw, 64px) 64px clamp(20px, 6vw, 64px);
+  }
+  .hero h1 {
+    font-family: var(--display); font-weight: 600;
+    font-size: clamp(2rem, 3.2vw, 2.6rem); line-height: 1.28;
+    margin: 0 0 20px; max-width: 18ch; color: var(--ink);
+  }
+  .hero-sub {
+    font-family: var(--sans); font-weight: 400;
+    font-size: 1.05rem; line-height: 1.55; color: var(--ink-soft);
+    max-width: 44ch; margin: 0 0 28px;
+  }
+  .hero-art { position: relative; height: 100%; }
+  .hero-art img {
+    display: block;
+    width: 100%; height: 100%; object-fit: cover;
+    object-position: 32% 22%;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 9%);
+    mask-image: linear-gradient(to right, transparent 0%, black 9%);
+  }
+
+  /* ---------- Section shell ---------- */
+
+  section.band { padding: 76px 0; }
+  section.band.alt { background: var(--bg-alt); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+  .section-head { text-align: center; margin: 0 auto 44px; max-width: 640px; }
+  h2.section-title {
+    font-family: var(--display); font-weight: 600;
+    font-size: clamp(1.7rem, 2.6vw, 2.1rem); margin: 0;
+  }
+  .section-head p {
+    color: var(--ink-soft); margin: 14px 0 0; font-size: 1.02rem;
+  }
+
+  /* ---------- Angebote ---------- */
+
+  .offer-list { display: flex; flex-direction: column; gap: 0; }
+  .offer-row {
+    position: relative; overflow: hidden;
+    display: grid; grid-template-columns: 220px 1fr; gap: 40px;
+    padding: 40px 24px 44px 0;
+    border-top: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='7'%3E%3Cpath d='M0 3.5 Q4 0 8 3.5 T16 3.5' stroke='%23DED4C1' stroke-width='1.6' fill='none'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-size: 16px 7px;
+    transition: padding 0.3s ease;
+  }
+  .offer-row:last-child::after {
+    content: "";
+    position: absolute; left: 0; right: 0; bottom: 0; height: 7px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='7'%3E%3Cpath d='M0 3.5 Q4 0 8 3.5 T16 3.5' stroke='%23DED4C1' stroke-width='1.6' fill='none'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+  }
+  .offer-row:hover { padding-left: 12px; }
+  .offer-row .ghost-num {
+    position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+    font-family: var(--logo); font-size: 6rem; line-height: 1;
+    color: var(--bg-alt); z-index: 0; user-select: none;
+  }
+  .offer-row .label {
+    position: relative; z-index: 1;
+    font-family: var(--sans); font-weight: 700; font-size: 0.76rem;
+    letter-spacing: 0.06em; text-transform: uppercase; color: var(--wine);
+    padding-top: 4px;
+  }
+  .offer-row > div { position: relative; z-index: 1; }
+  .offer-row h3 {
+    font-family: var(--display); font-weight: 600; font-size: 1.4rem;
+    margin: 0 0 12px; color: var(--ink);
+  }
+  .offer-row p { color: var(--ink-soft); margin: 0 0 14px; max-width: 62ch; }
+  .offer-row .link-cta { font-size: 0.9rem; }
+
+  /* ---------- Zielgruppen ---------- */
+
+  .audience-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 36px 48px;
+    max-width: 840px; margin: 0 auto;
+  }
+  .audience-grid div { text-align: left; }
+  .audience-grid h3 {
+    font-family: var(--display); font-weight: 600; font-size: 1.12rem;
+    margin: 0 0 8px; color: var(--ink);
+  }
+  .audience-grid p { color: var(--ink-soft); font-size: 0.96rem; margin: 0; }
+
+  /* ---------- Testimonial ---------- */
+
+  .testimonial { text-align: center; }
+  .testimonial blockquote {
+    margin: 0 auto; max-width: 640px;
+    font-family: var(--display); font-style: italic; font-weight: 400;
+    font-size: clamp(1.3rem, 2.6vw, 1.7rem); line-height: 1.5; color: var(--ink);
+  }
+  .testimonial cite {
+    display: block; margin-top: 22px; font-family: var(--sans); font-style: normal;
+    font-size: 0.9rem; color: var(--ink-soft);
+  }
+
+  /* ---------- Member badge ---------- */
+
+  .member-badge {
+    max-width: 640px; margin: 0 auto;
+    padding: 28px 34px;
+    background: var(--bg-alt);
+    border-radius: 18px;
+    box-shadow: 0 16px 36px -22px rgba(94, 44, 37, 0.3);
+    display: flex; align-items: center; gap: 24px; flex-wrap: wrap;
+    justify-content: center; text-align: left;
+  }
+  .member-badge img { height: 220px; width: auto; }
+  .member-badge p { margin: 0; font-family: var(--display); font-size: 1.02rem; color: var(--ink); }
+
+  /* ---------- Google-Bewertungen (Platzhalter fuer Trustindex) ---------- */
+
+  .review-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  }
+  .review-card {
+    background: var(--white);
+    border: 1.5px dashed var(--line);
+    border-radius: 16px;
+    padding: 26px 24px;
+    text-align: left;
+  }
+  .review-card .stars {
+    color: var(--gold); font-size: 1.1rem; letter-spacing: 2px; opacity: 0.55;
+    margin-bottom: 12px;
+  }
+  .review-card .review-text {
+    font-family: var(--display); font-style: italic; font-size: 0.98rem;
+    color: var(--ink-soft); margin: 0 0 14px;
+  }
+  .review-card .review-name {
+    font-family: var(--sans); font-weight: 700; font-size: 0.82rem;
+    color: var(--ink-soft); margin: 0; opacity: 0.7;
+  }
+
+  /* ---------- Workshops ---------- */
+
+  .workshop-block { max-width: 680px; margin: 0 auto; text-align: center; }
+  .workshop-block p { color: var(--ink-soft); text-align: left; }
+
+  /* ---------- Contact teaser ---------- */
+
+  .contact-teaser { text-align: center; }
+  .contact-teaser p { color: var(--ink-soft); font-size: 1.05rem; max-width: 520px; margin: 0 auto 30px; }
+
+  /* ---------- Footer ---------- */
+
+  footer.site-footer { background: var(--bg-alt); color: var(--ink-soft); padding: 56px 0 28px; box-shadow: 0 -1px 0 var(--line); }
+  .footer-grid {
+    display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 40px;
+    padding-bottom: 36px; border-bottom: 1px solid var(--line);
+  }
+  .footer-grid .brand { font-family: var(--display); font-weight: 600; font-size: 1.25rem; color: var(--ink); }
+  .footer-grid .sub { font-size: 0.82rem; color: var(--ink-soft); margin-top: 4px; }
+  footer h4 {
+    font-family: var(--sans); font-size: 0.76rem; color: var(--ink-soft);
+    margin: 0 0 16px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+  }
+  footer ul { list-style: none; margin: 0; padding: 0; }
+  footer li { margin-bottom: 10px; font-size: 0.95rem; color: var(--ink); }
+  footer a { text-decoration: none; color: var(--ink); }
+  footer a:hover { color: var(--wine-deep); }
+  .footer-bottom {
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+    padding-top: 24px; font-size: 0.82rem; color: var(--ink-soft);
+  }
+  .footer-bottom a { color: var(--ink-soft); text-decoration: underline; }
+
+  /* ---------- Responsive ---------- */
+
+  @media (max-width: 760px) {
+    .header-inner { padding: 18px 20px 14px; }
+    .hero-grid { grid-template-columns: 1fr; min-height: 0; }
+    .hero-copy { padding: 40px 20px 32px; }
+    .hero-art { order: 2; height: 320px; }
+    .hero-art img { -webkit-mask-image: none; mask-image: none; }
+    .nav-toggle { display: inline-block; }
+    nav.main-nav {
+      display: none; width: 100%;
+      border-top: 1px solid var(--line); padding-top: 14px; margin-top: 4px;
+    }
+    nav.main-nav ul { flex-direction: column; align-items: center; gap: 12px; }
+    #nav-check:checked ~ nav.main-nav { display: block; }
+    .offer-row { grid-template-columns: 1fr; gap: 8px; }
+    .audience-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; gap: 28px; text-align: center; }
+    .member-badge { flex-direction: column; text-align: center; }
+    .review-grid { grid-template-columns: 1fr; }
+    section.band { padding: 56px 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="index-v4.html">
+      <span class="brand-block">
+        <span class="brand">Vokalwerkstatt</span>
+        <span class="sub">Stimme und Alexander-Technik</span>
+      </span>
+    </a>
+
+    <input type="checkbox" id="nav-check" style="display:none;">
+    <label for="nav-check" class="nav-toggle" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="stimmbildung.html">Stimmbildung</a></li>
+        <li><a href="alexander-technik.html">Alexander-Technik</a></li>
+        <li><a href="stimme-im-beruf.html">Stimme im Beruf</a></li>
+        <li><a href="workshops-termine.html">Workshops &amp; Termine</a></li>
+        <li><a href="ueber-mich.html">Über mich</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1>Deine Stimme ist Ausdruck deiner ganzen Persönlichkeit.</h1>
+        <p class="hero-sub">Stimmbildung und Alexander-Technik in Berlin, für Sänger:innen, Sprecher:innen, Coaches, Therapeut:innen und Menschen auf dem Entwicklungsweg.</p>
+
+        <a class="link-cta" href="kontakt.html">Kontakt aufnehmen</a>
+      </div>
+
+      <figure class="hero-art">
+        <img src="assets/850_2748-1_2000px.jpg" alt="Beate v. Hahn arbeitet mit einer Schülerin an der Stimme, Stimmbildung in Berlin">
+      </figure>
+    </div>
+  </section>
+
+  <!-- Wer sie ist -->
+  <section class="band">
+    <div class="wrap-narrow" style="text-align:center;">
+      <img src="assets/850_3139-1_2000px.jpg" alt="Beate v. Hahn, Stimmbildnerin und Alexander-Technik-Lehrerin in Berlin" style="width:160px; height:160px; object-fit:cover; object-position:center 20%; border-radius:50%; box-shadow:0 14px 30px -10px rgba(94,44,37,0.35); margin:0 auto 20px;">
+      <h2 class="section-title" style="margin-bottom:24px;">Wer ich bin</h2>
+      <p style="color:var(--ink-soft); text-align:left;">Ich bin ausgebildete Opern- und Konzertsängerin und war mehrere Jahre am Landestheater Detmold engagiert. Anschließend ließ ich mich in Berlin bei Dan Armon zur Lehrerin der Alexander-Technik ausbilden. Seitdem begleite ich Menschen dabei, ihre stimmlichen und körperlichen Gewohnheiten bewusster wahrzunehmen und neue Freiheit im Ausdruck zu entwickeln.</p>
+      <p style="color:var(--ink-soft); text-align:left;">Meine eigene stimmliche Forschung ist für mich bis heute ein lebendiger Entwicklungsraum, ein Feld, in dem Wachstum, Befreiung und authentischer Ausdruck möglich werden. Diese Erfahrung prägt meinen Unterricht.</p>
+      <a class="link-cta" href="ueber-mich.html">Mehr über meinen Weg</a>
+    </div>
+  </section>
+
+  <!-- Angebote -->
+  <section class="band" id="angebote">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title">Was ich anbiete</h2>
+      </div>
+
+      <div class="offer-list">
+
+        <article class="offer-row">
+          <span class="ghost-num">01</span>
+          <span class="label">01 &middot; Stimmbildung</span>
+          <div>
+            <h3>Stimmbildung</h3>
+            <p>In Berlin unterstütze ich dich dabei, deine Stimme zu entdecken, zu entfalten und frei fließen zu lassen. Meine Arbeit verbindet Erfahrungen aus meiner eigenen Stimmbildung, meiner Bühnentätigkeit und der Alexander-Technik mit der kreativen Kraft der Musik.</p>
+            <a class="link-cta" href="stimmbildung.html">Mehr erfahren</a>
+          </div>
+        </article>
+
+        <article class="offer-row">
+          <span class="ghost-num">02</span>
+          <span class="label">02 &middot; Alexander-Technik</span>
+          <div>
+            <h3>Alexander-Technik</h3>
+            <p>Die Alexander-Technik hilft zu erkennen, wie wir unser inneres Gleichgewicht selbst stören, und wie wir es von Moment zu Moment wiederfinden. In Berlin biete ich Einzelstunden für Sänger:innen, Sprecher:innen und alle an, die mit Verspannungen, Schmerzen oder auf der Suche nach mehr Präsenz zu mir kommen.</p>
+            <a class="link-cta" href="alexander-technik.html">Mehr erfahren</a>
+          </div>
+        </article>
+
+        <article class="offer-row">
+          <span class="ghost-num">03</span>
+          <span class="label">03 &middot; Stimme im Beruf</span>
+          <div>
+            <h3>Stimme im Beruf</h3>
+            <p>Für Lehrer:innen, Coaches, Therapeut:innen und Führungskräfte, die ihre Stimme im beruflichen Alltag bewusster und klarer einsetzen möchten, etwa im Rahmen von Sprechtraining oder Stimmtraining.</p>
+            <a class="link-cta" href="stimme-im-beruf.html">Mehr erfahren</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Zielgruppen -->
+  <section class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title">Meine Arbeit richtet sich an</h2>
+      </div>
+      <div class="audience-grid">
+        <div>
+          <h3>Sänger:innen und professionelle Sprecher:innen</h3>
+          <p>die ihre stimmliche Freiheit vertiefen und Ausdruck, Präsenz und Leichtigkeit verbinden möchten.</p>
+        </div>
+        <div>
+          <h3>Menschen in Veränderungs- und Übergangsphasen</h3>
+          <p>die ihre Stimme als Zugang zu innerer Klarheit und authentischem Ausdruck entdecken wollen.</p>
+        </div>
+        <div>
+          <h3>Therapeut:innen, Coaches und Körperarbeiter:innen</h3>
+          <p>die ihre Stimme bewusster und klarer einsetzen möchten, etwa im Rahmen von Sprechtraining oder Stimmtraining.</p>
+        </div>
+        <div>
+          <h3>Menschen, die sich nach mehr Ganzheit sehnen</h3>
+          <p>die spüren, dass Stimme mehr ist als Klang, nämlich ein Weg zu sich selbst.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="band alt testimonial">
+    <div class="wrap">
+      <blockquote>
+        „Danke, dass Du so unermüdlich meiner Natur auf die Sprünge hilfst, gehört, gesehen und gefühlt zu werden!"
+      </blockquote>
+      <cite>Stefanie, Sängerin am Mittelsächsischen Theater Freiberg</cite>
+    </div>
+  </section>
+
+  <!-- ATVD-Mitgliedschaft -->
+  <section class="band">
+    <div class="wrap">
+      <div class="member-badge">
+        <img src="assets/ATV_Logo_Mitgliedschaft.webp" alt="Mitglied im Alexander-Technik-Verband Deutschland e.V.">
+        <p>Zertifizierte Alexander-Technik-Lehrerin, Mitglied im Alexander-Technik-Verband Deutschland e.V.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google-Bewertungen (Platzhalter, wird spaeter per Trustindex-Skript ersetzt) -->
+  <section class="band alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title">Google-Bewertungen</h2>
+        <p>Platzhalter, wird hier später per Trustindex-Widget eingebunden</p>
+      </div>
+
+      <!-- TRUSTINDEX-WIDGET-PLATZHALTER: hier kommt später das Embed-Script von Trustindex hin -->
+      <div class="review-grid">
+        <div class="review-card">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p class="review-text">„Platzhaltertext für eine echte Google-Bewertung."</p>
+          <p class="review-name">Name folgt</p>
+        </div>
+        <div class="review-card">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p class="review-text">„Platzhaltertext für eine echte Google-Bewertung."</p>
+          <p class="review-name">Name folgt</p>
+        </div>
+        <div class="review-card">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p class="review-text">„Platzhaltertext für eine echte Google-Bewertung."</p>
+          <p class="review-name">Name folgt</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workshops -->
+  <section class="band">
+    <div class="wrap workshop-block">
+      <h2 class="section-title" style="margin-bottom:20px;">Workshops und Seminare</h2>
+      <p>Ich biete diverse Seminare und Workshops zum Thema Stimme und Körpergebrauch an, für Chorsänger:innen, Therapeut:innen, Coaches und Lehrer:innen. Aktuell öffne ich das Embodied Sound Exploratorium, eine angeleitete gemeinsame Entdeckungsreise in die Welt von Körper- und Stimmklang.</p>
+      <a class="link-cta" href="workshops-termine.html">Alle Termine</a>
+    </div>
+  </section>
+
+  <!-- Kontakt-Teaser -->
+  <section class="band contact-teaser">
+    <div class="wrap">
+      <h2 class="section-title" style="margin-bottom:20px;">Lass uns sprechen</h2>
+      <p>Ob Einzelstunde, Frage zur Alexander-Technik oder Interesse an einem Workshop, schreib mir einfach. Ich melde mich meist innerhalb weniger Stunden zurück.</p>
+      <a class="link-cta" href="kontakt.html">Kontakt aufnehmen</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand">Vokalwerkstatt</div>
+        <div class="sub">Stimme und Alexander-Technik<br>Beate v. Hahn</div>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="stimmbildung.html">Stimmbildung</a></li>
+          <li><a href="alexander-technik.html">Alexander-Technik</a></li>
+          <li><a href="stimme-im-beruf.html">Stimme im Beruf</a></li>
+          <li><a href="workshops-termine.html">Workshops &amp; Termine</a></li>
+          <li><a href="ueber-mich.html">Über mich</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+491782838224">0178 28 38 224</a></li>
+          <li><a href="mailto:info@vokalwerkstatt.de">info@vokalwerkstatt.de</a></li>
+          <li>Arndtstraße 21, 10965 Berlin</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vokalwerkstatt · Beate v. Hahn</span>
+      <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
